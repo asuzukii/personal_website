@@ -13,7 +13,7 @@ const About: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Image src="/akira_nekkid.jpg" alt="Akira's Nice Photo" width={1300} height={1000}/>
+        {/* <Image src="/akira_nekkid.jpg" alt="Akira's Nice Photo" width={1300} height={1000}/> */}
         <Button>
           This is the About Section!
         </Button>
