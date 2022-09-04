@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Button from '@mui/material/Button'
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,12 +13,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <Button href='/about'>
-          Go to the About Page
+        <Image src="/akira_nekkid.jpg" alt="Akira's Nice Photo" width={1300} height={1000}/>
+        <Button>
+          This is the About Section!
         </Button>
         <Button>
           Hey Andy!
@@ -42,4 +39,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default About
