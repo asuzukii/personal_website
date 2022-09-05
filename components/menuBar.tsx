@@ -17,9 +17,8 @@ const ResponsiveAppBar = () => {
                     display: { xs: 'none', md: 'flex' },
                     justifyContent: 'flex-end'}}>
                     {pages.map((page) => (
-                        <Link href={"/" + page.toLowerCase()} passHref>
+                        <Link key={page} href={"/" + page.toLowerCase()} passHref>
                             <Button
-                            key={page}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                             {page}
