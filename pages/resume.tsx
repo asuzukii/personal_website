@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import Footer from '../components/footer'
 import ResponsiveAppBar from '../components/menuBar';
 import styles from '../styles/Home.module.css'
@@ -9,7 +10,7 @@ const About: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>About</title>
+        <title>Resume</title>
         <meta name="description" content="Akira Suzuki's Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -23,17 +24,12 @@ const About: NextPage = () => {
                 variant="h3"
                 color="inherit"
                 gutterBottom>
-                About
+                Resume
             </Typography>
-            <Typography>
-                This is the About Section!
-            </Typography>
-            <Button href='/'>
-                Go back to the main page
-            </Button>
+            <iframe src="/Akira_Suzuki_Resume.pdf" width="100%" height="700px">
+            </iframe>
           </Container>
         </main>
-
         <Footer />
       </ThemeProvider>
     </div>

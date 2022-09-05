@@ -9,7 +9,7 @@ const About: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>About</title>
+        <title>Projects</title>
         <meta name="description" content="Akira Suzuki's Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -23,17 +23,16 @@ const About: NextPage = () => {
                 variant="h3"
                 color="inherit"
                 gutterBottom>
-                About
+                Projects
             </Typography>
             <Typography>
-                This is the About Section!
+                This is the Projects Section!
             </Typography>
             <Button href='/'>
                 Go back to the main page
             </Button>
           </Container>
         </main>
-
         <Footer />
       </ThemeProvider>
     </div>
