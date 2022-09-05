@@ -7,13 +7,7 @@ import styles from '../styles/Home.module.css'
 import theme from '../styles/customTheme'
 import { Container, Typography, ThemeProvider } from '@mui/material/'
 
-const homeBanner = {
-  title: 'Akira Suzuki',
-  description:
-    "Software Engineer",
-  image: "/front_banner.jpg",
-  imageText: 'main image description',
-};
+
 
 const Home: NextPage = () => {
   return (
@@ -26,7 +20,7 @@ const Home: NextPage = () => {
         <ThemeProvider theme={theme}>
           <main>
             <ResponsiveAppBar />
-            <HomeBanner post={homeBanner} />
+            <HomeBanner />
             <Container maxWidth='md'>
               <Typography>
                 Hi, I&apos;m Akira and I work at Cepton Technologies, a company that develops LiDAR.

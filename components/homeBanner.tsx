@@ -5,8 +5,15 @@ import theme from '../styles/customTheme';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-function HomeBanner(props) {
-  const { post } = props;
+const homeBanner = {
+    title: 'Akira Suzuki',
+    description:
+      "Software Engineer",
+    image: "/front_banner.jpg",
+    imageText: 'main image description',
+  };
+
+function HomeBanner() {
 
   return (
         <ThemeProvider theme={theme}>
@@ -18,7 +25,7 @@ function HomeBanner(props) {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
-                backgroundImage: `url(${post.image})`,
+                backgroundImage: `url(${homeBanner.image})`,
                 
             }}
             >
@@ -48,14 +55,14 @@ function HomeBanner(props) {
                                 variant="h3"
                                 color="inherit"
                                 gutterBottom>
-                            {post.title}
+                            {homeBanner.title}
                             </Typography>
                             <Typography
                                 align="center"
                                 variant="h6"
                                 color="inherit"
                                 paragraph>
-                            {post.description}
+                            {homeBanner.description}
                             </Typography>
                             <Stack
                                 justifyContent="center"
