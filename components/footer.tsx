@@ -4,27 +4,25 @@ import Link from 'next/link';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Container, Divider, Grid, IconButton, Link as MUILink, Typography, styled, Stack, ThemeProvider } from '@mui/material/'
+
+const pages = ['Home', 'About', 'Resume', 'Projects', 'Blog'];
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
         <Grid container direction="column" justifyContent="center">
           <Container maxWidth="lg">
             <Stack direction="row" justifyContent="center" divider={<Divider orientation="vertical" flexItem />}>
-              <Link href={"/"} passHref>
-                <MUILink><Typography align="center" sx={{px: 1}}>Home</Typography></MUILink>
-              </Link>
-              <Link href={"/"} passHref>
-                <MUILink><Typography align="center" sx={{px: 1}}>About</Typography></MUILink>
-              </Link>
-              <Link href={"/"} passHref>
-                <MUILink><Typography align="center" sx={{px: 1}}>Resume</Typography></MUILink>
-              </Link>
-              <Link href={"/"} passHref>
-                <MUILink><Typography align="center" sx={{px: 1}}>Projects</Typography></MUILink>
-              </Link>
-              <Link href={"/"} passHref>
-                <MUILink><Typography align="center" sx={{px: 1}}>Blog</Typography></MUILink>
-              </Link>
+              {pages.map((page) => (
+                <Link key={page} href={page !== 'Home' ? "/" + page.toLowerCase() : "/"} passHref>
+                    <MUILink>
+                      <Typography align="center" sx={{px: 1}}>
+                        {page}
+                      </Typography>
+                    </MUILink>
+                </Link>
+                    
+              ))}
             </Stack>
           </Container>
          

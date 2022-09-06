@@ -58,7 +58,7 @@ const Home: NextPage = () => {
                   Hi, I am Akira and I work at <Link color='secondary' href="https://www.cepton.com/">
                   <b>Cepton</b></Link>, where I research and implement algorithms for perception
                   with LiDAR point clouds, as well as efficiently pipelining, storing, and visualizing the data.
-                  I graduated UCLA in June 2022 with an honors in Electrical Engineering-- at university,
+                  I graduated UCLA in June 2022 with honors in Electrical Engineering-- at university,
                   I published <Link color='secondary' href="https://visual.ee.ucla.edu/gt_rain.htm/"><b>a paper about deraining</b></Link> and did numerous internships
                   ranging from data science in the sales sector in Japan to software in the e-learning world.
                   <br /><br />
