@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AppBar, Box, Button, Container, Toolbar, ThemeProvider, Typography } from '@mui/material'
+import { AppBar, Box, Button, Container, Link as MUILink, Toolbar, ThemeProvider, Typography } from '@mui/material'
 import Link from 'next/link'
 import theme from '../styles/customTheme'
 const pages = ['About', 'Resume', 'Projects', 'Blog'];
@@ -7,11 +7,15 @@ const pages = ['About', 'Resume', 'Projects', 'Blog'];
 const ResponsiveAppBar = () => {
   return (
     <ThemeProvider theme={theme}>
-        <AppBar position="static">
+        <AppBar position="static" sx={{ boxShadow: 1 }}>
             <Container maxWidth="lg">
                 <Toolbar disableGutters>
                     <Link href={"/"}>
-                        Akira Suzuki
+                        <MUILink>
+                            <Typography variant="h6" sx={{color: 'background.default'}}>
+                                Akira Suzuki
+                            </Typography>
+                            </MUILink>
                     </Link>
                 <Box sx={{ flexGrow: 1,
                     display: { xs: 'none', md: 'flex' },

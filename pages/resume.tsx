@@ -5,7 +5,7 @@ import Footer from '../components/footer'
 import ResponsiveAppBar from '../components/menuBar';
 import styles from '../styles/Home.module.css'
 import theme from '../styles/customTheme'
-import { Button, Container, ThemeProvider, Typography } from '@mui/material/'
+import { Container, Divider, ThemeProvider, Typography } from '@mui/material/'
 const About: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -18,14 +18,17 @@ const About: NextPage = () => {
         <main>
           <ResponsiveAppBar />
           <Container maxWidth='md'>
+          <Divider variant="middle" sx={{my: 2}} />
             <Typography
+                sx={{my: 2}}
                 align="center"
                 component="h1"
                 variant="h3"
                 color="inherit"
                 gutterBottom>
-                Resume
+                <b>Resume</b>
             </Typography>
+            <Divider variant="middle" sx={{my: 2}} />
             <iframe src="/Akira_Suzuki_Resume.pdf" width="100%" height="700px">
             </iframe>
           </Container>

@@ -55,7 +55,8 @@ function HomeBanner() {
                                 variant="h3"
                                 color="inherit"
                                 gutterBottom>
-                            {homeBanner.title}
+                                    <b>{homeBanner.title}</b>
+                            
                             </Typography>
                             <Typography
                                 align="center"
